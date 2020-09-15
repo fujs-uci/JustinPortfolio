@@ -1,0 +1,253 @@
+{% load static %}
+<div class="bg-dark vh-25 vw-100"
+     style="background-image: url({% static "/portfolio/img/chuttersnap-9cCeS9Sg6nU-unsplash.jpg" %});
+             background-size: cover;
+             background-position: center;">
+    <div class="h-100 w-100 tinted-center">
+        <div class="text-theme-secondary m-auto font-kingsbridge font-weight-bold">
+            <div class="d-flex">
+                <img class="d-none d-sm-flex" style="max-width: 100px;"
+                     src="{% static page.img_5.image_url %}" alt="{{ page.text_5.text }}">
+                <h1>{{ page.name }}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="jumbotron">
+        <div class="row font-kingsbridge">
+            <div class="col">
+                <div class="font-weight-bold pl-2">
+                    summary &#x2501;
+                </div>
+            </div>
+        </div>
+        <div class="row font-oswald">
+            <div class="col-10 col-md-6 offset-1 offset-md-3">
+                Full Stack web developer responsible for the implementation, shipment, and maintenance of Bwanaz, a
+                complex E-commerce Website. Bwanaz was built using Django, styled with Bootstrap, and launched on AWS
+                with a SQL database within 7 months using a Waterfall model. Currently launching updates every week
+                aimed at improving user experience or backend handling.
+            </div>
+        </div>
+        <hr>
+        <div class="row font-kingsbridge">
+            <div class="col-12 col-md">
+                <div class="font-weight-bold pl-2">
+                    visit &#x2501;
+                </div>
+            </div>
+            <div class="col col-md-5 py-1">
+                <a href="http://www.bwanaz.com" class="btn bg-theme-accent-light">Bwanaz.com</a>
+            </div>
+            <div class="col col-md-5 py-1">
+                <a href="http://sellers.bwanaz.com" class="btn bg-theme-accent-light">Sellers.Bwanaz.com</a>
+            </div>
+        </div>
+        <hr>
+        <div class="row font-kingsbridge">
+            <div class="col">
+                <div class="font-weight-bold">
+                    company &#x2501;
+                </div>
+                <div class="text-dark font-oswald text-center">
+                    Bwanaz
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="font-weight-bold">
+                    roles &#x2501;
+                </div>
+                <div class="font-oswald text-center">
+                    <div class="text-dark">
+                        Full Stack Developer
+                    </div>
+                    <div class="text-dark">
+                        Project Manager
+                    </div>
+                    <div class="text-dark">
+                        Development Tester
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="font-weight-bold">
+                    timeline &#x2501;
+                </div>
+                <div class="text-dark font-oswald text-center">
+                    2019 - current
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row font-kingsbridge">
+            <div class="col">
+                <div class="font-weight-bold pl-2">
+                    skills &#x2501;
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-6 col-md-3 my-auto slide-left dur-1">
+                        <img class="w-100" src="{% static page.img_1.image_url %}" alt="{{ page.text_1.text }}">
+                    </div>
+                    <div class="col-6 col-md-3 my-auto slide-left dur-2">
+                        <img class="w-100" src="{% static page.img_2.image_url %}" alt="{{ page.text_2.text }}">
+                    </div>
+                    <div class="col-6 col-md-3 my-auto slide-left dur-3">
+                        <img class="w-100" src="{% static page.img_3.image_url %}" alt="{{ page.text_3.text }}">
+                    </div>
+                    <div class="col-6 col-md-3 my-auto slide-left dur-4">
+                        <img class="w-100" src="{% static page.img_4.image_url %}" alt="{{ page.text_4.text }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row py-3 bg-theme-primary">
+        <div class="col">
+            <div class="font-kingsbridge font-weight-bold">
+                <h1>00. DEEP DIVE &#8628;</h1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row" id="tab-1">
+        <div class="col offset-2">
+            <div class="font-kingsbridge font-weight-bold">
+                <h3><span class="bg-theme-primary p-1 rounded">01.</span> PROBLEM &#x2501;</h3>
+            </div>
+        </div>
+        <div class="col-12 font-oswald">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex">
+                    <img class="mx-auto"
+                         style="max-width: 100% "
+                         src="{% static "portfolio/img/light-bulb-2.png" %}"
+                         alt="confusion">
+                </div>
+                <div class="col-12 col-md-6 d-flex">
+                    <div class="m-auto">
+                        <p>- legacy website & database was unreliable and confusing</p>
+                        <p>- updates took months to produce and were often underwhelming or did not meet
+                            requirements</p>
+                        <p>- could not integrate with APIs that required sensitive information</p>
+                        <p>- was not mobile friendly</p>
+                        <p>- backend and front end code could not be customized</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row" id="tab-2">
+        <div class="col offset-2 d-inline d-md-none">
+            <div class="font-kingsbridge font-weight-bold">
+                <h3><span class="bg-theme-primary p-1 rounded">02.</span> PLAN &#x2501;</h3>
+            </div>
+        </div>
+        <div class="col-12 bg-light font-oswald p-3">
+            <div class="row">
+                <div class="col d-flex">
+                    <div class="m-auto">
+                        <p>- restructure records in legacy database and rebuild database architecture from ground up</p>
+                        <p>- create a base backend structure consisting of user creation, product creation, cart
+                            checkout,
+                            seller
+                            payouts, product view, account management</p>
+                        <p>- work with graphic designer to create a simple and logical mobile first interface</p>
+                        <p>- launch onto AWS and create automated scripts</p>
+                        <p>- test, fix, and maintain</p>
+                    </div>
+                </div>
+                <div class="col d-none d-md-flex">
+                    <div class="font-kingsbridge font-weight-bold m-auto">
+                        <h3>&#x2501; <span class="bg-theme-primary p-1 rounded">02.</span> PLAN</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row" id="tab-3">
+        <div class="col offset-2">
+            <div class="font-kingsbridge font-weight-bold">
+                <h3><span class="bg-theme-primary p-1 rounded">03.</span> LAUNCH &#x2501;</h3>
+            </div>
+        </div>
+        <div class="col-12 font-oswald p-3">
+            <div class="row">
+                <div class="col d-flex">
+                    <div class="m-auto">
+                        <p>- use aws elastic beanstalk that incorporates a collection of services to deploy
+                            applications,
+                            including a load balancer</p>
+                        <p>- use aws s3 to hold and serve static files</p>
+                        <p>- use aws rds to host a sql database</p>
+                        <p>- launch three elastic beanstalk environments for each type of client, admin, seller, and
+                            buyer</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex">
+                    <img class="mx-auto"
+                         style="max-width: 100% "
+                         src="{% static "portfolio/img/rocket-launch-1.png" %}"
+                         alt="launch">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row" id="tab-4">
+        <div class="col offset-2 d-inline d-md-none">
+            <div class="font-kingsbridge font-weight-bold">
+                <h3><span class="bg-theme-primary p-1 rounded">04.</span> CULTIVATE &#x2501;</h3>
+            </div>
+        </div>
+        <div class="col-12 bg-light font-oswald p-3">
+            <div class="row">
+                <div class="col d-none d-md-flex">
+                    <div class="font-kingsbridge font-weight-bold m-auto">
+                        <h3><span class="bg-theme-primary p-1 rounded">04.</span> CULTIVATE &#x2501;</h3>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="m-auto">
+                        <p>- set up email alerts when an exception was thrown or a bug was found</p>
+                        <p>- wrote unit tests to ensure scalability and consistency</p>
+                        <p>- debugged and fixed issues</p>
+                        <p>- maintained versions with github</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row" id="tab-5">
+        <div class="col offset-2 d-inline d-md-none">
+            <div class="font-kingsbridge font-weight-bold">
+                <h3><span class="bg-theme-primary p-1 rounded">05.</span> REVISIT &#x2501;</h3>
+            </div>
+        </div>
+        <div class="col-12 font-oswald p-3">
+            <div class="row">
+                <div class="col d-flex">
+                    <div class="m-auto">
+                        <p>- new additions and requested features are added as modules</p>
+                        <p>- two week cycle, research solutions, api, or library</p>
+                        <p>- design and implement, test and deploy</p>
+                    </div>
+                </div>
+                <div class="col d-none d-md-flex">
+                    <div class="font-kingsbridge font-weight-bold m-auto">
+                        <h3>&#x2501; <span class="bg-theme-primary p-1 rounded">05.</span> REVISIT</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>

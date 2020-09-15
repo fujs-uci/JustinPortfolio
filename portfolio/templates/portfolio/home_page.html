@@ -1,0 +1,29 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block header %}
+    {% include "portfolio/header.html" %}
+{% endblock %}
+{% block body %}
+    <div class="page-loader bg-theme-accent-dark">
+        <div class="text-center m-auto font-size-5rem loading"></div>
+    </div>
+    <div class="container pb-2 pt-2"
+         data-spy="scroll" data-target="#nav-modal-menu" data-offset="0">
+
+        <!-- Dynamic Content -->
+        {% for section in sections %}
+            <div class="section {{ section.get_styles }}" id="{{ section.name }}">
+                {% include section.layout.template %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+{% block js_scripts %}
+    <script src="{% static "portfolio/js/pageLoader.js" %}"></script>
+{% endblock %}
+{% block footer %}
+    {% include "portfolio/footer.html" %}
+{% endblock %}

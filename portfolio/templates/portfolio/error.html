@@ -1,0 +1,25 @@
+{% extends 'portfolio/base.html' %}
+{% block title %}
+    Something went wrong.
+{% endblock %}
+{% block header %}
+    {% include "portfolio/header_2.html" %}
+{% endblock %}
+{% block body %}
+    <div class="container vh-90  d-flex">
+        <div class="m-auto font-kingsbridge">
+            <div class="bg-light p-3">
+                <h1><span class="error-page error-anim-1">Yikes</span></h1>
+                <h4>
+                    <span class="error-page error-anim-2">That's</span>
+                    <span class="error-page error-anim-3">embarassing.</span>
+                </h4>
+                <h1><span class="error-page error-anim-4">Something</span></h1>
+                <h2>
+                    <span class="error-page error-anim-5">went</span>
+                    <span class="error-page error-anim-6">wrong.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+{% endblock %}

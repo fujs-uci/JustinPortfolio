@@ -1,0 +1,26 @@
+{% load static %}
+<div class="section-content">
+    <div class="section-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 offset-lg-3 bg-theme-primary border-thick border-dark mt-5">
+                    <img class="w-100" src="{% static section.img_1.image_url %}" alt="img-one">
+                    <div class="img-text text-nowrap">
+                        <div class="row">
+                            <div class="col-12">
+                                <span class="font-kingsbridge img-font-size text-white font-weight-bold">
+                                    {{ section.text_1.text|linebreaksbr }}
+                                </span>
+                            </div>
+                            <div class="col-12 bg-transparent-light">
+                                <span class="font-oswald img-font-size-sm text-white">
+                                    {{ section.text_2.text|linebreaksbr }}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

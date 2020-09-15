@@ -1,0 +1,10 @@
+{% load static %}
+<nav class="navbar fixed-top bg-transparent">
+    <a class="navbar-brand pl-1 font-oswald link-hover" href="{% url "portfolio:home_page" %}">SHAN CHUN</a>
+    <a href="{% url 'portfolio:home_page' %}">
+        <img class="navbar-exit project-link link-hover"
+             style="height: 50px"
+             src="{% static 'portfolio/img/iconfinder_close_512x512.png' %}"
+             alt="back">
+    </a>
+</nav>

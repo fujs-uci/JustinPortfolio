@@ -1,0 +1,28 @@
+{% load static %}
+<div class="section-content mt-5">
+    <div class="section-body w-100">
+        <div class="container container-width mx-auto">
+            <div class="row">
+                <div class="col section-title text-center font-kingsbridge font-weight-bold font-size-2rem">
+                    <span class="bg-theme-secondary px-4">{{ section.name }}</span>
+                </div>
+            </div>
+            <div class="row my-2 p-2 h-100">
+                {% for item in section.items %}
+                    <div class="col-3 p-0 p-sm-1">
+                        <img class="w-100" src="{% static item.img.image_url %}" alt="img-one">
+                    </div>
+                    <div class="col-9 my-auto">
+                        <div class="row">
+                            <div class="col text-center font-oswald">
+                                <a href="{% url 'portfolio:link_view' item.link.name_url %}">
+                                    <h2 class="project-link link-hover">{{ item.text.text|linebreaksbr }}</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,149 @@
+{% load static %}
+<div class="bg-dark vh-25 vw-100"
+     style="background-image: url({% static "/portfolio/img/marica-romeo-zScy4kj2OzU-unsplash.jpg" %});
+             background-size: cover;
+             background-position: center;">
+    <div class="h-100 w-100 tinted-center">
+        <div class="text-theme-secondary m-auto font-kingsbridge font-weight-bold">
+            <div class="d-flex">
+                <img class="d-none d-sm-flex" style="max-width: 100px;"
+                     src="{% static page.img_5.image_url %}" alt="{{ page.text_5.text }}">
+                <h1>{{ page.name }}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="jumbotron">
+        <div class="row font-kingsbridge">
+            <div class="col">
+                <div class="font-weight-bold pl-2">
+                    summary &#x2501;
+                </div>
+            </div>
+        </div>
+        <div class="row font-oswald">
+            <div class="col-10 col-md-6 offset-1 offset-md-3">
+                Automated the collection of Marketing data with a simple web crawler and python scripts. Created an
+                CSV handler to standardize and insert legacy data into a SQL database. Made a web interface with Django
+                for employees to access the Marketing data.
+            </div>
+        </div>
+        <hr>
+        <div class="row font-kingsbridge">
+            <div class="col">
+                <div class="font-weight-bold">
+                    company &#x2501;
+                </div>
+                <div class="text-dark font-oswald text-center">
+                    Bwanaz
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="font-weight-bold">
+                    roles &#x2501;
+                </div>
+                <div class="font-oswald">
+                    <div class="text-dark text-center">
+                        Full Stack Developer
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="font-weight-bold">
+                    timeline &#x2501;
+                </div>
+                <div class="text-dark font-oswald text-center">
+                    Sept 2018 - Feb 2019
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row font-kingsbridge">
+            <div class="col">
+                <div class="font-weight-bold pl-2">
+                    skills &#x2501;
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-6 col-md-3 my-auto slide-left dur-1">
+                        <img class="w-100" src="{% static page.img_1.image_url %}" alt="{{ page.text_1.text }}">
+                    </div>
+                    <div class="col-6 col-md-3 my-auto slide-left dur-2">
+                        <img class="w-100" src="{% static page.img_2.image_url %}" alt="{{ page.text_2.text }}">
+                    </div>
+                    <div class="col-6 col-md-3 my-auto slide-left dur-3">
+                        <img class="w-100" src="{% static page.img_3.image_url %}" alt="{{ page.text_3.text }}">
+                    </div>
+                    <div class="col-6 col-md-3 my-auto slide-left dur-4">
+                        <img class="w-100" src="{% static page.img_4.image_url %}" alt="{{ page.text_4.text }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row py-3 bg-theme-primary">
+        <div class="col">
+            <div class="font-kingsbridge font-weight-bold">
+                <h1>00. DEEP DIVE &#8628;</h1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row" id="tab-1">
+        <div class="col offset-2">
+            <div class="font-kingsbridge font-weight-bold">
+                <h3><span class="bg-theme-primary p-1 rounded">01.</span> Problem &#x2501;</h3>
+            </div>
+        </div>
+        <div class="col-12 font-oswald">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex">
+                    <img class="mx-auto"
+                         style="max-width: 80% "
+                         src="{% static "portfolio/img/read_write_database.png" %}"
+                         alt="confusion">
+                </div>
+                <div class="col-12 col-md-6 d-flex">
+                    <div class="m-auto">
+                        <p>Employees were manually digging through websites to find record data</p>
+                        <p>Data was stored on separate excel sheets with varying and missing columns</p>
+                        <p>A single employee could collect less than 100 records in a day</p>
+                        <p>No infrastructure existed once collection was completed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row" id="tab-2">
+        <div class="col offset-2 d-inline d-md-none">
+            <div class="font-kingsbridge font-weight-bold">
+                <h3><span class="bg-theme-primary p-1 rounded">02.</span> Approach &#x2501;</h3>
+            </div>
+        </div>
+        <div class="col-12 bg-light font-oswald p-3">
+            <div class="row">
+                <div class="col d-flex">
+                    <div class="m-auto">
+                        <p>Automate the collection of data with python scripts that controlled hardware I/O </p>
+                        <p>Develop a python web crawler for the few known websites that gave robot.txt access</p>
+                        <p>Use python to convert existing legacy data into Python objects</p>
+                        <p>Design a database architecture to store millions of records</p>
+                        <p>Launch a Django application for employees to access data</p>
+                    </div>
+                </div>
+                <div class="col d-none d-md-flex">
+                    <div class="font-kingsbridge font-weight-bold m-auto">
+                        <h3>&#x2501; <span class="bg-theme-primary p-1 rounded">02.</span> Approach</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>

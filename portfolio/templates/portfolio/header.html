@@ -1,0 +1,59 @@
+{% load static %}
+<header>
+    <nav class="navbar fixed-top bg-transparent">
+        <a class="navbar-brand pl-1 font-kingsbridge link-hover" href="{% url "portfolio:home_page" %}">SHAN CHUN</a>
+        <button class="navbar-toggler collapsed link-hover" type="button" data-toggle="modal"
+                data-target="#nav-modal" aria-expanded="false">
+            <img class="menu-icon-size" src="{% static "portfolio/img/menu-512x512.png" %}" alt="menu">
+        </button>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade bg-theme-secondary" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         data-backdrop="false">
+        <button type="button"
+                class="modal-close close text-theme-accent-dark font-size-40 link-hover top-right"
+                data-dismiss="modal"
+                aria-label="Close">
+            <span aria-hidden="true">
+                <img class="navbar-exit link-hover"
+                     style="height: 50px"
+                     src="{% static 'portfolio/img/iconfinder_close_512x512.png' %}"
+                     alt="back">
+            </span>
+        </button>
+        <div class="modal-dialog modal-dialog-centered modal-sm bg-theme-secondary" role="document">
+            <div class="modal-content border-0 bg-theme-secondary">
+                <div class="modal-body" id="nav-modal-menu">
+                    <ul class="list-group">
+                        <!-- Menu Item -->
+                        {% for section in menu %}
+                            <li class="list-group-item border-0 bg-theme-secondary">
+                                <h1 class="col-12 menu-modal-link p-1 text-center link-hover">
+                                    <a href="{{ section.get_link }}"
+                                            {% if section.name == "RESUME" %}
+                                       target="_blank"
+                                            {% endif %}>{{ section.name }}</a>
+                                </h1>
+                            </li>
+                        {% endfor %}
+
+                        <!-- Social Media -->
+                        <li class="list-group-item border-0 bg-theme-secondary text-center">
+                            <div class="row">
+                                {% for social in social_media %}
+                                    <div class="col">
+                                        <a href="{{ social.link }}">
+                                            <img src="{% static social.image_url %}" alt="{{ social.alt }}"
+                                                 class="img-icon link-hover">
+                                        </a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
